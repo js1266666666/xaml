@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 using MySql.Data.MySqlClient;
 
 namespace _011_EIS
@@ -22,11 +22,11 @@ namespace _011_EIS
     /// </summary>
     public partial class MainWindow : Window
     {
-        string dept = ""; //부서
-        string pos = ""; //직급
-        string gender = ""; //성별
-        string dateEnter = ""; //입사일
-        string dateExit = ""; //퇴사일
+        string dept = "";
+        string pos = "";
+        string gender = "";
+        string dateEnter = "";
+        string dateExit = "";
 
         string connStr = "server=localhost; user id=root; password=0000; database=eis2_db";
         MySqlConnection conn;
@@ -45,24 +45,145 @@ namespace _011_EIS
 
             if (dpEnter.SelectedDate != null) dateEnter = dpEnter.SelectedDate.Value.Date.ToShortDateString();
             if (dpExit.SelectedDate != null) dateExit = dpExit.SelectedDate.Value.Date.ToShortDateString();
-            else dateExit = DateTime.MaxValue.ToShortDateString(); // 9999년 12월 31일
+            else dateExit = DateTime.MaxValue.ToShortDateString();
 
             dept = cbDept.Text;
             pos = cbPos.Text;
 
-            //입력할 데이터 다 만듦
             conn.Open();
-
-            string sql = string.Format("INSERT INTO eis_table (name, department, position, gender, date_enter, date_exit, contact, comment"
-                + "VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", txtName.Text, dept, pos, gender, dateEnter, dateExit, txtContact.Text, txtCommnet.Text);
-
-            MySqlCommand cmd = new MySqlCommand(sql, conn);
-            if (cmd.ExecuteNonQuery() == 1)
+            try
             {
-                MessageBox.Show("성공적으로 추가되었습니다.");
+                string sql = string.Format("INSERT INTO eis_table (name, department, position, gender, date_enter, date_exit, contact, comment)"
+                    + "VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", txtName.Text, dept, pos, gender, dateEnter, dateExit, txtContact.Text, txtComment.Text);
+
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                if (cmd.ExecuteNonQuery() == 1)
+                {
+                    MessageBox.Show("성공적으로 추가되었습니다.");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
 
-            conn.Close();//Open, close 사이에 작업
+            conn.Close(); // conn.open, close 사이에 입력
+            InitControls();
+        }
+
+        private void InitControls()
+        {
+            txtEid.Text = "";
+            txtName.Text = "";
+            txtContact.Text = "";
+            txtComment.Text = "";
+            cbDept.SelectedIndex = -1;
+            cbPos.SelectedIndex = -1;
+            rbFemale.IsChecked = false;
+            rbMale.IsChecked = false;
+            dpEnter.Text = "";
+            dpExit.Text = "";
+        }
+
+        private void btnLoadData_Click(object sender, RoutedEventArgs e)
+        {
+            conn.Open();
+
+            string sql = "SELECT * FROM eis_table";
+
+            try { 
+            MySqlDataAdapter da = new MySqlDataAdapter(sql, conn);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dataGrid.ItemsSource = ds.Tables[0].DefaultView;
+            } //오류 잡기
+
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            } //오류가 생기면 메세지박스 표시
+
+            conn.Close();
+        }
+
+        private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            DataGrid dg = sender as DataGrid;//=(DataGrid)sender;
+            DataRowView rowView = dg.SelectedItem as DataRowView;
+
+            if (rowView == null)
+                return;
+
+            txtEid.Text = rowView.Row[0].ToString();
+            txtName.Text = rowView.Row[1].ToString();
+            cbDept.Text = rowView.Row[2].ToString();
+            cbPos.Text = rowView.Row[3].ToString();
+
+            if (rowView.Row[4].ToString() == "남성")
+            {
+                rbMale.IsChecked = true;
+                rbFemale.IsChecked = false;
+            }
+            else
+            {
+                rbMale.IsChecked = false;
+                rbFemale.IsChecked = true;
+            }
+            dpEnter.Text = rowView.Row[5].ToString();
+            dpExit.Text = rowView.Row[6].ToString();
+            txtContact.Text = rowView.Row[7].ToString();
+            txtComment.Text = rowView.Row[8].ToString();
+        }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            if (rbMale.IsChecked == true)
+                gender = "남성";
+            else
+                gender = "여성";
+
+            dateEnter = dpEnter.Text;
+            dateExit = dpExit.Text;
+
+            dept = cbDept.Text;
+            pos = cbPos.Text;
+
+            conn.Open();
+            try
+            {
+                string sql = string.Format("UPDATE eis_table SET name='{0}', department='{1}', position='{2}', gender='{3}'," +
+                    "date_enter='{4}', date_exit='{5}', contact='{6}', comment='{7}' WHERE eid={8}", txtName.Text, dept, pos, gender, dateEnter, dateExit,
+                    txtContact.Text, txtComment.Text, txtEid.Text);//업데이트 하는 sql 문장 / WHERE 부분은 어디서에서 바꿀 것 인지 eid에 ''가 정수형이기 때문이고 나머지는 문자형이기 때문에 ''가 붙음 ex)'{1}'
+
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                if (cmd.ExecuteNonQuery() == 1)
+                    MessageBox.Show("성공적으로 수정되었습니다.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            conn.Close();
+            InitControls();
+        }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            conn.Open();
+            try
+            {
+                string sql = string.Format("DELETE FROM eis_table WHERE eid={0}", txtEid.Text);
+
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                if (cmd.ExecuteNonQuery() == 1)
+                    MessageBox.Show("성공적으로 삭제되었습니다.");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            conn.Close();
+            InitControls();
         }
     }
 }

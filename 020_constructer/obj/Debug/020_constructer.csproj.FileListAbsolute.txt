@@ -1,0 +1,8 @@
+C:\Users\konyang\Desktop\xaml-main\020_constructer\bin\Debug\020_constructer.exe.config
+C:\Users\konyang\Desktop\xaml-main\020_constructer\bin\Debug\020_constructer.exe
+C:\Users\konyang\Desktop\xaml-main\020_constructer\bin\Debug\020_constructer.pdb
+C:\Users\konyang\Desktop\xaml-main\020_constructer\obj\Debug\020_constructer.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\xaml-main\020_constructer\obj\Debug\020_constructer.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\xaml-main\020_constructer\obj\Debug\020_constructer.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\xaml-main\020_constructer\obj\Debug\020_constructer.exe
+C:\Users\konyang\Desktop\xaml-main\020_constructer\obj\Debug\020_constructer.pdb

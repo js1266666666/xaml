@@ -1,0 +1,8 @@
+C:\Users\konyang\Desktop\xaml-main\018_ClassInC#\bin\Debug\018_ClassInC#.exe.config
+C:\Users\konyang\Desktop\xaml-main\018_ClassInC#\bin\Debug\018_ClassInC#.exe
+C:\Users\konyang\Desktop\xaml-main\018_ClassInC#\bin\Debug\018_ClassInC#.pdb
+C:\Users\konyang\Desktop\xaml-main\018_ClassInC#\obj\Debug\018_ClassInC#.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\xaml-main\018_ClassInC#\obj\Debug\018_ClassInC#.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\xaml-main\018_ClassInC#\obj\Debug\018_ClassInC#.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\xaml-main\018_ClassInC#\obj\Debug\018_ClassInC#.exe
+C:\Users\konyang\Desktop\xaml-main\018_ClassInC#\obj\Debug\018_ClassInC#.pdb

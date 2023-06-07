@@ -1,0 +1,8 @@
+C:\Users\konyang\Desktop\xaml-main\019_static&instance\bin\Debug\019_static&instance.exe.config
+C:\Users\konyang\Desktop\xaml-main\019_static&instance\bin\Debug\019_static&instance.exe
+C:\Users\konyang\Desktop\xaml-main\019_static&instance\bin\Debug\019_static&instance.pdb
+C:\Users\konyang\Desktop\xaml-main\019_static&instance\obj\Debug\019_static&instance.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\xaml-main\019_static&instance\obj\Debug\019_static&instance.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\xaml-main\019_static&instance\obj\Debug\019_static&instance.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\xaml-main\019_static&instance\obj\Debug\019_static&instance.exe
+C:\Users\konyang\Desktop\xaml-main\019_static&instance\obj\Debug\019_static&instance.pdb

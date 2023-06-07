@@ -1,0 +1,8 @@
+C:\Users\konyang\Desktop\xaml-main\017_struct&class\bin\Debug\017_struct&class.exe.config
+C:\Users\konyang\Desktop\xaml-main\017_struct&class\bin\Debug\017_struct&class.exe
+C:\Users\konyang\Desktop\xaml-main\017_struct&class\bin\Debug\017_struct&class.pdb
+C:\Users\konyang\Desktop\xaml-main\017_struct&class\obj\Debug\017_struct&class.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\xaml-main\017_struct&class\obj\Debug\017_struct&class.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\xaml-main\017_struct&class\obj\Debug\017_struct&class.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\xaml-main\017_struct&class\obj\Debug\017_struct&class.exe
+C:\Users\konyang\Desktop\xaml-main\017_struct&class\obj\Debug\017_struct&class.pdb

@@ -1,0 +1,8 @@
+C:\Users\konyang\Desktop\xaml-main\016_DateClass\bin\Debug\016_DateClass.exe.config
+C:\Users\konyang\Desktop\xaml-main\016_DateClass\bin\Debug\016_DateClass.exe
+C:\Users\konyang\Desktop\xaml-main\016_DateClass\bin\Debug\016_DateClass.pdb
+C:\Users\konyang\Desktop\xaml-main\016_DateClass\obj\Debug\016_DateClass.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\xaml-main\016_DateClass\obj\Debug\016_DateClass.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\xaml-main\016_DateClass\obj\Debug\016_DateClass.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\xaml-main\016_DateClass\obj\Debug\016_DateClass.exe
+C:\Users\konyang\Desktop\xaml-main\016_DateClass\obj\Debug\016_DateClass.pdb

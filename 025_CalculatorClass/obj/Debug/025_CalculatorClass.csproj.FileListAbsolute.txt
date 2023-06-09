@@ -1,0 +1,8 @@
+C:\Users\konyang\Desktop\xaml-main\025_CalculatorClass\bin\Debug\025_CalculatorClass.exe.config
+C:\Users\konyang\Desktop\xaml-main\025_CalculatorClass\bin\Debug\025_CalculatorClass.exe
+C:\Users\konyang\Desktop\xaml-main\025_CalculatorClass\bin\Debug\025_CalculatorClass.pdb
+C:\Users\konyang\Desktop\xaml-main\025_CalculatorClass\obj\Debug\025_CalculatorClass.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\xaml-main\025_CalculatorClass\obj\Debug\025_CalculatorClass.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\xaml-main\025_CalculatorClass\obj\Debug\025_CalculatorClass.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\xaml-main\025_CalculatorClass\obj\Debug\025_CalculatorClass.exe
+C:\Users\konyang\Desktop\xaml-main\025_CalculatorClass\obj\Debug\025_CalculatorClass.pdb

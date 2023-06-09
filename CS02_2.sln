@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "023_Rectprop", "023_Rectpro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "024_Studentclass", "024_Studentclass\024_Studentclass.csproj", "{F8BCC5BF-BF2B-4886-997C-59820E48EE15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "025_CalculatorClass", "025_CalculatorClass\025_CalculatorClass.csproj", "{D6FF445F-9AAD-4170-A1D4-1F1ADE44BD45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{F8BCC5BF-BF2B-4886-997C-59820E48EE15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8BCC5BF-BF2B-4886-997C-59820E48EE15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8BCC5BF-BF2B-4886-997C-59820E48EE15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6FF445F-9AAD-4170-A1D4-1F1ADE44BD45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FF445F-9AAD-4170-A1D4-1F1ADE44BD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FF445F-9AAD-4170-A1D4-1F1ADE44BD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FF445F-9AAD-4170-A1D4-1F1ADE44BD45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

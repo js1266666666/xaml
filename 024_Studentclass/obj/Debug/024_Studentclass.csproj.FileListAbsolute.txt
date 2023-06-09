@@ -1,0 +1,8 @@
+C:\Users\konyang\Desktop\xaml-main\024_Studentclass\bin\Debug\024_Studentclass.exe.config
+C:\Users\konyang\Desktop\xaml-main\024_Studentclass\bin\Debug\024_Studentclass.exe
+C:\Users\konyang\Desktop\xaml-main\024_Studentclass\bin\Debug\024_Studentclass.pdb
+C:\Users\konyang\Desktop\xaml-main\024_Studentclass\obj\Debug\024_Studentclass.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\xaml-main\024_Studentclass\obj\Debug\024_Studentclass.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\xaml-main\024_Studentclass\obj\Debug\024_Studentclass.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\xaml-main\024_Studentclass\obj\Debug\024_Studentclass.exe
+C:\Users\konyang\Desktop\xaml-main\024_Studentclass\obj\Debug\024_Studentclass.pdb

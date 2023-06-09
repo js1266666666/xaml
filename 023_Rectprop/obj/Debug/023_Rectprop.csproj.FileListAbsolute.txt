@@ -1,0 +1,8 @@
+C:\Users\konyang\Desktop\xaml-main\023_Rectprop\bin\Debug\023_Rectprop.exe.config
+C:\Users\konyang\Desktop\xaml-main\023_Rectprop\bin\Debug\023_Rectprop.exe
+C:\Users\konyang\Desktop\xaml-main\023_Rectprop\bin\Debug\023_Rectprop.pdb
+C:\Users\konyang\Desktop\xaml-main\023_Rectprop\obj\Debug\023_Rectprop.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\xaml-main\023_Rectprop\obj\Debug\023_Rectprop.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\xaml-main\023_Rectprop\obj\Debug\023_Rectprop.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\xaml-main\023_Rectprop\obj\Debug\023_Rectprop.exe
+C:\Users\konyang\Desktop\xaml-main\023_Rectprop\obj\Debug\023_Rectprop.pdb

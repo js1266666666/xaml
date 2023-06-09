@@ -1,0 +1,8 @@
+C:\Users\konyang\Desktop\xaml-main\022_RectangleClass\bin\Debug\022_RectangleClass.exe.config
+C:\Users\konyang\Desktop\xaml-main\022_RectangleClass\bin\Debug\022_RectangleClass.exe
+C:\Users\konyang\Desktop\xaml-main\022_RectangleClass\bin\Debug\022_RectangleClass.pdb
+C:\Users\konyang\Desktop\xaml-main\022_RectangleClass\obj\Debug\022_RectangleClass.csproj.AssemblyReference.cache
+C:\Users\konyang\Desktop\xaml-main\022_RectangleClass\obj\Debug\022_RectangleClass.csproj.SuggestedBindingRedirects.cache
+C:\Users\konyang\Desktop\xaml-main\022_RectangleClass\obj\Debug\022_RectangleClass.csproj.CoreCompileInputs.cache
+C:\Users\konyang\Desktop\xaml-main\022_RectangleClass\obj\Debug\022_RectangleClass.exe
+C:\Users\konyang\Desktop\xaml-main\022_RectangleClass\obj\Debug\022_RectangleClass.pdb
